@@ -4,11 +4,4 @@
  */
 
 const count = process.argv.length;
-if ( count === 2)
-{
-    console.log('No argument');
-}
-else
-{
-    console.log('Argument found');
-}
+console.log(count === 2 ? 'No argument' : count === 3 ? 'Argument found' : 'Arguments found');
