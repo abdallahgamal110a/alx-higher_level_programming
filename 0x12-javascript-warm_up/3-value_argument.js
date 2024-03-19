@@ -2,9 +2,9 @@
 /**
  * script that prints the first argument passed to it
  */
-const arg = process.argv[2];
-if (arg === undefined) {
+const myarg = process.argv;
+if (myarg[2] === undefined) {
   console.log('No argument');
 } else {
-  console.log(arg);
+  console.log(myarg[2]);
 }
